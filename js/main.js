@@ -29,6 +29,6 @@ if (form) {
     ].join('\n');
     const subject = encodeURIComponent('Web sitesi projesi için teklif');
     const mailBody = encodeURIComponent(body);
-    window.location.href = `mailto:info@ard-digital.com?subject=${subject}&body=${mailBody}`;
+    window.location.href = `mailto:ardamevk12@gmail.com?subject=${subject}&body=${mailBody}`;
   });
 }
