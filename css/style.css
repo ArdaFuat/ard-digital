@@ -1186,3 +1186,57 @@ body:before{
   }
   .social-buttons{justify-content:flex-start;}
 }
+
+
+/* ARD Games */
+.nav-links a.active{background:rgba(255,233,184,.09);color:var(--cream)}
+.games-hero{padding:96px 0 30px}
+.games-hero-grid{display:grid;grid-template-columns:1.15fr .45fr;gap:34px;align-items:end}
+.games-title{font-size:clamp(4rem,10vw,9rem);line-height:.82;letter-spacing:-.075em;margin:18px 0 22px;text-transform:uppercase}
+.games-lead{max-width:760px;color:var(--muted);font-size:1.08rem;line-height:1.75;margin:0}
+.games-side-note{justify-self:end;min-width:210px;border:1px solid var(--line);border-radius:24px;padding:22px;background:rgba(255,233,184,.045)}
+.games-side-note span{display:block;color:var(--muted);font-weight:800;font-size:.85rem;margin-bottom:7px}
+.games-side-note strong{font-size:1.55rem;color:var(--gold)}
+.games-section{padding-top:38px}
+.game-feature-card{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);border:1px solid var(--line);border-radius:34px;overflow:hidden;background:linear-gradient(135deg,rgba(255,107,26,.11),rgba(255,233,184,.035));box-shadow:var(--shadow)}
+.game-visual{min-height:540px;padding:22px;background:linear-gradient(145deg,#1c0e0a,#4a1d10);display:flex;flex-direction:column}
+.game-window-bar{height:45px;border:1px solid rgba(255,233,184,.15);border-bottom:0;border-radius:18px 18px 0 0;background:rgba(16,8,6,.82);display:flex;align-items:center;gap:7px;padding:0 14px;color:rgba(255,233,184,.45);font-size:.72rem;font-weight:900;letter-spacing:.13em}
+.game-window-bar i{width:8px;height:8px;border-radius:999px;background:rgba(255,233,184,.28)}
+.game-window-bar span{margin-left:auto}
+.pixel-shop-scene{position:relative;flex:1;min-height:430px;overflow:hidden;border:1px solid rgba(255,233,184,.15);border-radius:0 0 22px 22px;background:linear-gradient(150deg,#bd8050 0 42%,#7a452d 42% 100%)}
+.pixel-shop-scene:before,.pixel-shop-scene:after{content:"";position:absolute;top:0;width:50%;height:58%;background:repeating-linear-gradient(90deg,rgba(70,28,16,.7) 0 3px,rgba(188,121,72,.16) 3px 52px)}
+.pixel-shop-scene:before{left:0;clip-path:polygon(0 0,100% 28%,100% 100%,0 72%)}
+.pixel-shop-scene:after{right:0;clip-path:polygon(0 28%,100% 0,100% 72%,0 100%)}
+.pixel-wall{position:absolute;top:75px;z-index:2;display:grid;gap:28px}
+.pixel-wall.left-wall{left:10%;transform:skewY(14deg)}
+.pixel-wall.right-wall{right:10%;transform:skewY(-14deg)}
+.pixel-wall span{display:block;width:56px;height:15px;border:5px solid #28120d;border-top:0;border-radius:0 0 8px 8px;position:relative}
+.pixel-wall span:after{content:"";position:absolute;width:10px;height:38px;background:#d3a353;left:18px;top:8px;border-radius:3px;box-shadow:7px 11px 0 #38201a}
+.pixel-counter{position:absolute;left:34%;top:48%;width:33%;height:23%;z-index:3;background:#3d2117;clip-path:polygon(14% 0,100% 20%,85% 100%,0 73%);box-shadow:inset 0 0 0 5px rgba(255,233,184,.12)}
+.pixel-player,.pixel-customer{position:absolute;z-index:5;width:34px;height:62px;bottom:17%;filter:drop-shadow(6px 8px 0 rgba(0,0,0,.22))}
+.pixel-player{left:27%;background:linear-gradient(#17110f 0 20%,#c2462b 20% 51%,#76a7c4 51% 100%)}
+.pixel-player:before,.pixel-customer:before{content:"";position:absolute;width:25px;height:22px;border-radius:45%;left:5px;top:-18px;background:#c79370}
+.pixel-player:after{content:"";position:absolute;width:31px;height:5px;top:-8px;left:2px;background:#4d0c0c;box-shadow:0 7px 0 rgba(150,20,20,.6)}
+.pixel-customer{right:24%;background:linear-gradient(#2b211d 0 20%,#d1a148 20% 55%,#332b28 55% 100%)}
+.pixel-customer:before{background:#b77d59}
+.pixel-floor-lines{position:absolute;inset:47% -12% -20%;transform:perspective(280px) rotateX(55deg);background:repeating-linear-gradient(90deg,rgba(69,32,22,.45) 0 2px,transparent 2px 55px),repeating-linear-gradient(0deg,rgba(69,32,22,.38) 0 2px,transparent 2px 48px)}
+.game-info{padding:46px;display:flex;flex-direction:column;justify-content:center}
+.game-meta-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+.game-status,.game-platform{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:.8rem;font-weight:900}
+.game-status{color:var(--cream)}
+.game-status i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:6px;box-shadow:0 0 0 4px rgba(255,188,40,.1)}
+.game-kicker{color:var(--gold);font-weight:950;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem}
+.game-info h2{font-size:clamp(2.7rem,5vw,5rem);line-height:.9;letter-spacing:-.06em;margin:13px 0 20px}
+.game-info>p{color:var(--muted);line-height:1.75;font-size:1.02rem;margin:0 0 28px}
+.game-points{display:grid;gap:12px;margin:0 0 30px}
+.game-points div{border-top:1px solid var(--line);padding-top:14px;display:grid;grid-template-columns:120px 1fr;gap:15px}
+.game-points strong{color:var(--cream)}
+.game-points span{color:var(--muted);line-height:1.55;font-size:.92rem}
+.game-actions{display:flex;gap:10px;flex-wrap:wrap}
+.disabled-button{opacity:.55;cursor:default;pointer-events:none}
+@media(max-width:900px){.games-hero-grid,.game-feature-card{grid-template-columns:1fr}.games-side-note{justify-self:start}.game-visual{min-height:430px}.game-info{padding:30px}}
+@media(max-width:560px){.games-hero{padding-top:60px}.games-title{font-size:4rem}.game-visual{padding:12px;min-height:350px}.pixel-shop-scene{min-height:300px}.game-info{padding:24px}.game-points div{grid-template-columns:1fr;gap:5px}.game-actions .btn{width:100%;justify-content:center}}
+
+/* Guitar Shop Simulator logo artwork */
+.game-logo-visual{padding:0;min-height:0;background:#ffb52e;display:block;overflow:hidden}
+.game-logo-image{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}
