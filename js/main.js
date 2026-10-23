@@ -1,8 +1,23 @@
 const navToggle = document.querySelector('[data-menu-toggle]');
 const navLinks = document.querySelector('[data-nav-links]');
 if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  navLinks.id = 'site-navigation';
+  navToggle.setAttribute('aria-controls', navLinks.id);
+  navToggle.setAttribute('aria-expanded', 'false');
+  const closeMenu = () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Menüyü aç');
+  };
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+  });
+  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
+  });
 }
 
 const year = document.querySelector('[data-year]');
