@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ard-digital.com/sitemap.xml
