@@ -1,0 +1,22 @@
+.privacy-page{scroll-padding-top:100px}
+.privacy-skip{position:absolute;top:8px;left:12px;transform:translateY(-200%);z-index:100;background:var(--cream);color:var(--bg);padding:12px 18px;border-radius:8px}
+.privacy-skip:focus{transform:none}
+.privacy-header-links{display:flex;gap:24px;font-size:.9rem;font-weight:650}
+.privacy-container{width:min(860px,calc(100% - 40px));margin:0 auto}
+.privacy-hero{position:relative;padding:64px 0 36px;border-bottom:1px solid var(--line)}
+.privacy-app-icon{border-radius:20px;object-fit:cover;margin-bottom:25px}
+.privacy-hero h1{font-size:clamp(2.6rem,7vw,4.7rem);line-height:1.04;letter-spacing:-.05em;margin:20px 0}
+.privacy-intro{font-size:1.15rem;color:var(--cream)}
+.privacy-updated{font-size:.85rem;color:var(--muted);line-height:1.7}
+.privacy-language{display:flex;gap:12px;margin-top:24px}
+.privacy-language a{border:1px solid var(--line);border-radius:99px;padding:10px 18px;font-size:.9rem}
+.privacy-language a:hover{background:var(--bg-soft)}
+.privacy-document{padding:40px 0;border-bottom:1px solid var(--line);scroll-margin-top:100px}
+.privacy-document h2{font-size:2rem;letter-spacing:-.035em;margin:0 0 22px}
+.privacy-document h3{font-size:1.15rem;line-height:1.5;margin:30px 0 10px;color:var(--cream)}
+.privacy-document p,.privacy-contact p{font-size:1rem;line-height:1.85;color:var(--muted);margin:0 0 16px;overflow-wrap:anywhere}
+.privacy-document strong{color:var(--cream-2);font-weight:650}
+.privacy-contact{padding:48px 0 64px;scroll-margin-top:100px}
+.privacy-contact h2{font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:-.04em;margin:18px 0}
+.privacy-contact .btn{margin:6px 0 22px;overflow-wrap:anywhere;max-width:100%}
+@media(max-width:600px){.privacy-container{width:calc(100% - 36px)}.privacy-hero{padding-top:38px}.privacy-header-links{gap:14px;font-size:.78rem}.privacy-page .brand img{max-width:115px}.privacy-document{padding:32px 0}.privacy-document p{line-height:1.8}.privacy-app-icon{width:64px;height:64px;border-radius:16px}.privacy-contact .btn{font-size:.9rem}}
